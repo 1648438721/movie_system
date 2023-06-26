@@ -1,0 +1,40 @@
+server:
+  port: 10001
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sys_movie?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+#  security:
+#    user:
+#      name: root
+#      password: 123
+  redis:
+    port: 6379
+    host: 127.0.0.1
+    database: 2
+    password:
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    org.springframework: info
+
+token:
+  jwt:
+    secret: SllL
+    expire: 604800
+    header: token
+
+#aliyun oss
+aliyun:
+  accessKeyId: LTAI5tKP7kDPQ2xxhS4RDJ3j
+  secretAccessKey: BCWrgRpbakq0pfvBKke8CQQWl4Txud
+  oss:
+    endPoint: oss-cn-hangzhou.aliyuncs.com
+    bucketName: wanli-jyk
