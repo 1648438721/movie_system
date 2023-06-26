@@ -33,8 +33,8 @@ token:
 
 #aliyun oss
 aliyun:
-  accessKeyId: LTAI5tKP7kDPQ2xxhS4RDJ3j
-  secretAccessKey: BCWrgRpbakq0pfvBKke8CQQWl4Txud
+  accessKeyId: #自己的oss账号
+  secretAccessKey: #自己的oss账号
   oss:
     endPoint: oss-cn-hangzhou.aliyuncs.com
     bucketName: wanli-jyk
